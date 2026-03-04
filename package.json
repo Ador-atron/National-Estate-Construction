@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "npx -y serve -p 3000 .",
+    "dev": "npx -y http-server -p 3000 -c-1 .",
     "build": "echo 'No build step required'",
-    "start": "npx -y serve -p 3000 ."
+    "start": "npx -y http-server -p 3000 -c-1 ."
   }
 }
