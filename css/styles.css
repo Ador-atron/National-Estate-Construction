@@ -1,0 +1,46 @@
+/* Custom Styles for National Estate & Construction */
+
+/* 
+ * Tailwind CSS is loaded via CDN in the HTML files.
+ * This file is for any custom CSS that cannot be easily handled by Tailwind utility classes.
+ */
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Add smooth scrolling to the whole document */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+.dark ::-webkit-scrollbar-track {
+    background: #1e293b; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1; 
+    border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+    background: #475569; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8; 
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+    background: #64748b; 
+}

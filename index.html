@@ -1,15 +1,343 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>National Estate & Construction</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>National Estate & Construction | Building Legacies</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1152d4",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                        "charcoal": "#1e293b",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+    <!-- Top Navigation Bar -->
+    <header class="sticky top-0 z-50 w-full bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="./index.html" class="flex items-center gap-3">
+                    <div class="text-primary">
+                        <svg class="size-8" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z" fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <span class="text-xl font-extrabold tracking-tight text-slate-900 dark:text-white uppercase">National Estate</span>
+                </a>
+                <nav class="hidden md:flex items-center gap-8">
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="./index.html">Home</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="./about.html">About</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="./services.html">Services</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="./projects.html">Projects</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="./why-choose-us.html">Why Choose Us</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="./testimonials.html">Testimonials</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="./contact.html">Contact</a>
+                </nav>
+                <div class="flex items-center gap-3">
+                    <a class="hidden lg:flex items-center justify-center p-2 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-primary/10 text-slate-700 dark:text-slate-300 transition-all" href="tel:0778022147">
+                        <span class="material-symbols-outlined">call</span>
+                    </a>
+                    <a href="./contact.html" class="bg-primary hover:bg-primary/90 text-white px-5 py-2.5 rounded-lg text-sm font-bold transition-all shadow-lg shadow-primary/20">
+                        Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
 
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden pt-16 pb-24 lg:pt-32 lg:pb-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="flex flex-col gap-8">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider w-fit">
+                        <span class="relative flex h-2 w-2">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                        </span>
+                        Uganda's Premier Developers
+                    </div>
+                    <h1 class="text-5xl lg:text-7xl font-black text-slate-900 dark:text-white leading-[1.1] tracking-tight">
+                        Building Structures. <br/><span class="text-primary">Creating Legacy.</span>
+                    </h1>
+                    <p class="text-lg text-slate-600 dark:text-slate-400 max-w-xl leading-relaxed">
+                        Premium construction and estate development solutions engineered for durability, value, and long-term impact in the heart of Kampala.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="./contact.html" class="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-xl font-bold transition-all flex items-center gap-2">
+                            Request a Consultation <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </a>
+                        <a href="./projects.html" class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-primary px-8 py-4 rounded-xl font-bold transition-all">
+                            View Our Projects
+                        </a>
+                    </div>
+                    <div class="flex items-center gap-6 mt-4 pt-8 border-t border-slate-200 dark:border-slate-800">
+                        <div class="flex flex-col">
+                            <span class="text-2xl font-bold">15+</span>
+                            <span class="text-xs text-slate-500 uppercase font-semibold">Years Experience</span>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-2xl font-bold">200+</span>
+                            <span class="text-xs text-slate-500 uppercase font-semibold">Projects Completed</span>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-2xl font-bold">98%</span>
+                            <span class="text-xs text-slate-500 uppercase font-semibold">Client Satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl bg-slate-200 dark:bg-slate-800">
+                        <img alt="Construction Site" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEE-mNrlFwT71_NHDSnoS-rv3KXd-0Dsu04_YCO0-vICslHg_izjNPwBL-3hX_WQXw2PmDqvzSElHKJOgoMxZZ35qhB4gjuzAUcUaPm6DA7KbPs0gcqHbjcHUISIpChbWPlka5KBp89E6Qx72KUy0nCHY7wQ5G4p5l-9PbgiGsw1mY8eqT9Ns2udJ-s2K3Miu5TND1Xsi__IvMIWwFp8GosbHILs2rLGpJKTbZgHmI124t8W35ry1fycl2t4TTqB4FAJQWoPXBPNI"/>
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 bg-white dark:bg-slate-900 p-6 rounded-2xl shadow-xl border border-slate-100 dark:border-slate-800 max-w-xs">
+                        <div class="flex items-center gap-4">
+                            <div class="size-12 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+                                <span class="material-symbols-outlined">location_on</span>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-slate-500 uppercase">Headquarters</p>
+                                <p class="text-sm font-semibold">Plot 1, Nyonyi Gardens Rd, Upper Kololo Terrace, Kampala</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Snapshot -->
+    <section class="py-24 bg-slate-50 dark:bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="order-2 lg:order-1 grid grid-cols-2 gap-4">
+                    <div class="bg-primary h-64 rounded-2xl flex items-center justify-center p-8 text-white">
+                        <p class="text-xl font-bold leading-tight italic">"We don't just build houses, we construct the future of urban living."</p>
+                    </div>
+                    <div class="bg-slate-200 dark:bg-slate-800 h-64 rounded-2xl overflow-hidden">
+                        <img alt="Architectural Detail" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA71Ku8LnMjfB-0dYdM5ACYN0sqliwmnDD3UMy3rCXM0iPOo6z5dAoPGz6N14xxEJ8VHiWc66LJCjHgDu_DKw7eFJh0WFls5d953jfHuLg_ugC_io1aXszblRJASP6l03FiFie80fCiUnp9SZBYwrzUXyTyyapSTVVwku0grIeE3y2lhdI0Ns606KotYFI46b6r2Ep6D7rEaT9reKxRHt6b0agDAj_gk_IsACT7Xin_0XLe56PKHy8k_LGhE2s8Me448JXzz7xU9oI"/>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2 flex flex-col gap-6">
+                    <h2 class="text-primary font-bold uppercase tracking-widest text-sm">About National Estate</h2>
+                    <h3 class="text-4xl font-extrabold text-slate-900 dark:text-white">A Legacy of Quality and Trust in Construction</h3>
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-lg">
+                        National Estate and Construction Company is a leader in delivering high-quality infrastructure and residential developments across Kampala. With a commitment to durability and value, we build more than just structures—we build legacies for generations to come.
+                    </p>
+                    <div class="flex flex-col gap-4 mt-4">
+                        <div class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-primary">verified</span>
+                            <p class="font-semibold">ISO 9001 Certified Quality Management</p>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-primary">groups</span>
+                            <p class="font-semibold">Team of 500+ Skilled Engineers &amp; Craftsmen</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Services -->
+    <section class="py-24 bg-white dark:bg-background-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16">
+            <h2 class="text-primary font-bold uppercase tracking-widest text-sm mb-4">What We Do</h2>
+            <h3 class="text-4xl font-extrabold text-slate-900 dark:text-white">Comprehensive Engineering Solutions</h3>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-8">
+            <div class="p-8 rounded-2xl bg-background-light dark:bg-slate-900 border border-slate-100 dark:border-slate-800 hover:shadow-2xl hover:-translate-y-2 transition-all group">
+                <div class="size-16 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                    <span class="material-symbols-outlined text-3xl">home_work</span>
+                </div>
+                <h4 class="text-2xl font-bold mb-4">Residential Construction</h4>
+                <p class="text-slate-500 dark:text-slate-400 leading-relaxed mb-6">
+                    Custom luxury homes and high-end residential complexes designed for comfort and modern aesthetics.
+                </p>
+                <a class="text-primary font-bold flex items-center gap-2 group-hover:gap-3 transition-all" href="./services.html">
+                    Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                </a>
+            </div>
+            <div class="p-8 rounded-2xl bg-background-light dark:bg-slate-900 border border-slate-100 dark:border-slate-800 hover:shadow-2xl hover:-translate-y-2 transition-all group">
+                <div class="size-16 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                    <span class="material-symbols-outlined text-3xl">apartment</span>
+                </div>
+                <h4 class="text-2xl font-bold mb-4">Commercial Projects</h4>
+                <p class="text-slate-500 dark:text-slate-400 leading-relaxed mb-6">
+                    Functional and sustainable office spaces, retail malls, and industrial warehouses engineered for business.
+                </p>
+                <a class="text-primary font-bold flex items-center gap-2 group-hover:gap-3 transition-all" href="./services.html">
+                    Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                </a>
+            </div>
+            <div class="p-8 rounded-2xl bg-background-light dark:bg-slate-900 border border-slate-100 dark:border-slate-800 hover:shadow-2xl hover:-translate-y-2 transition-all group">
+                <div class="size-16 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                    <span class="material-symbols-outlined text-3xl">landscape</span>
+                </div>
+                <h4 class="text-2xl font-bold mb-4">Estate Development</h4>
+                <p class="text-slate-500 dark:text-slate-400 leading-relaxed mb-6">
+                    Large-scale master-planned communities and infrastructure development from the ground up.
+                </p>
+                <a class="text-primary font-bold flex items-center gap-2 group-hover:gap-3 transition-all" href="./services.html">
+                    Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Preview -->
+    <section class="py-24 bg-slate-50 dark:bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                <div class="flex flex-col gap-4">
+                    <h2 class="text-primary font-bold uppercase tracking-widest text-sm">Portfolio</h2>
+                    <h3 class="text-4xl font-extrabold text-slate-900 dark:text-white">Legacy Projects</h3>
+                </div>
+                <a href="./projects.html" class="bg-primary/10 hover:bg-primary text-primary hover:text-white px-6 py-3 rounded-lg font-bold transition-all">
+                    View Full Portfolio
+                </a>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="group cursor-pointer">
+                    <div class="relative aspect-video rounded-2xl overflow-hidden mb-6">
+                        <img alt="Kololo Towers" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLk53f5hdOU6fC9fYo2xSjvfR_HYPprmMeuOljq8JT9sGIv2HD3flTdcPNTXcuHM4r7TaM-I7ql8FU00FlJmFuHo4iwWePGFmtSINlXQ_Uy2cGTzeQUbUTzR9OuFqWA0Z5o35sfADi080naaoa5ZqJen8H708dkvxFhAGlLhwSZQE2_h0oZJgZCG-E54NP73BgSKALSKeAvCUBamhy6mbQIO31Si-fLsP8V6CkJUdD1mo5C7kIzUE4gemE0Myn8roAwX5Vli6_BY8"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                            <span class="text-white font-bold flex items-center gap-2">View Details <span class="material-symbols-outlined">north_east</span></span>
+                        </div>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Kololo Heights Towers</h4>
+                    <p class="text-slate-500 text-sm font-medium">Commercial • Kampala</p>
+                </div>
+                <div class="group cursor-pointer">
+                    <div class="relative aspect-video rounded-2xl overflow-hidden mb-6">
+                        <img alt="Nyonyi Villas" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFS5QHZ8mfBHO1NnXUoJ7EY3ebiYvPlm-T-lNOHQIEvWq-kD-DzGZsnEmnavKOFHlxmOohNJ50crMq_kFdtSH27_3vdmKFdsbKBTHvxg_abeugpsWFhTesvv2RNIZxCC21KvrSiIwrTKOXiwLvKdTvkej9pByJPLu7OWT83eSftCWUq20uSV2ODetFCzZNpJDQZ2HrZJG85dvkZMUVOMJV_zjWIkdSUz-l3speND9O_4ncHBKcenlrKT3WdeEYrnhunmD4RRSuW38"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                            <span class="text-white font-bold flex items-center gap-2">View Details <span class="material-symbols-outlined">north_east</span></span>
+                        </div>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Nyonyi Luxury Villas</h4>
+                    <p class="text-slate-500 text-sm font-medium">Residential • Upper Kololo</p>
+                </div>
+                <div class="group cursor-pointer">
+                    <div class="relative aspect-video rounded-2xl overflow-hidden mb-6">
+                        <img alt="Lake View Estate" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4denbOMd5GJlIB80acKntE2wPYbWXNx0tgndPrNyrlyt01uE5vJ1jCFYfYkFYe4tphryuQYRC7BKTeUFXYSKbzip3DFcldJiK4Hb3q7Z-TG6UjRRkWCk4TcB5c2bL7g-SNnNAfb_VfycKWXyYHoQReUet8XKgD9rk3DwzmVUnkweCxfQrBxuWwdfeas7TRWHuNIyhd4NY0GqYkls94tA8f8QLY0DNSJhmN3SwHa0dj_DPRytig_2y5k3gC4GOhboTSKjWzWScm_w"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                            <span class="text-white font-bold flex items-center gap-2">View Details <span class="material-symbols-outlined">north_east</span></span>
+                        </div>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Victoria Lake Estate</h4>
+                    <p class="text-slate-500 text-sm font-medium">Estate Development • Entebbe</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strong CTA Block -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="relative bg-charcoal rounded-[2.5rem] p-10 lg:p-20 overflow-hidden text-center">
+                <div class="absolute inset-0 bg-primary/20"></div>
+                <div class="relative z-10 flex flex-col items-center gap-8">
+                    <h2 class="text-4xl lg:text-5xl font-black text-white max-w-2xl leading-tight">Ready to build your legacy project?</h2>
+                    <p class="text-white/70 text-lg max-w-xl">
+                        Schedule a free site assessment and consultation with our expert engineers today.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <a href="./contact.html" class="bg-primary hover:bg-white hover:text-primary text-white px-10 py-5 rounded-xl font-bold text-lg transition-all shadow-xl">
+                            Request a Quote
+                        </a>
+                        <a class="bg-white/10 hover:bg-white/20 text-white border border-white/20 px-10 py-5 rounded-xl font-bold text-lg transition-all backdrop-blur-sm flex items-center gap-3" href="tel:0778022147">
+                            <span class="material-symbols-outlined">call</span> 0778 022147
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-16 pb-16 border-b border-white/10">
+                <div class="flex flex-col gap-6">
+                    <a href="./index.html" class="flex items-center gap-3">
+                        <div class="text-primary">
+                            <svg class="size-8" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z" fill="currentColor"></path>
+                            </svg>
+                        </div>
+                        <span class="text-xl font-extrabold tracking-tight uppercase">National Estate</span>
+                    </a>
+                    <p class="text-white/60 text-sm leading-relaxed">
+                        Leading construction and estate development company in Kampala, Uganda. Building with integrity and durability.
+                    </p>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6">Services</h5>
+                    <ul class="flex flex-col gap-4 text-white/60 text-sm">
+                        <li><a class="hover:text-primary transition-colors" href="./services.html">Residential Buildings</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="./services.html">Commercial Complexes</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="./services.html">Estate Infrastructure</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="./services.html">Renovations &amp; Repairs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6">Contact Info</h5>
+                    <ul class="flex flex-col gap-4 text-white/60 text-sm">
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary text-lg">location_on</span>
+                            <span>Plot 1, Nyonyi Gardens Rd,<br/>Upper Kololo Terrace, Kampala</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary text-lg">call</span>
+                            <span>0778 022147</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary text-lg">mail</span>
+                            <span>info@nationalestate.ug</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6">Newsletter</h5>
+                    <p class="text-white/60 text-sm mb-4">Stay updated with our latest projects and insights.</p>
+                    <div class="flex gap-2">
+                        <input class="bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm w-full focus:ring-primary focus:border-primary" placeholder="Your email" type="email"/>
+                        <button class="bg-primary p-2 rounded-lg"><span class="material-symbols-outlined">send</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 text-white/40 text-xs">
+                <p>© 2024 National Estate &amp; Construction Company. All rights reserved.</p>
+                <div class="flex gap-8">
+                    <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+                    <a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>

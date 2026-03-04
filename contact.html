@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Contact Us | National Estate & Construction</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1152d4",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                        "charcoal": "#1e293b",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+    <!-- Top Navigation Bar -->
+    <header class="sticky top-0 z-50 w-full bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="./index.html" class="flex items-center gap-3">
+                    <div class="text-primary">
+                        <svg class="size-8" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z" fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <span class="text-xl font-extrabold tracking-tight text-slate-900 dark:text-white uppercase">National Estate</span>
+                </a>
+                <nav class="hidden md:flex items-center gap-8">
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="./index.html">Home</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="./about.html">About</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="./services.html">Services</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="./projects.html">Projects</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="./why-choose-us.html">Why Choose Us</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="./testimonials.html">Testimonials</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="./contact.html">Contact</a>
+                </nav>
+                <div class="flex items-center gap-3">
+                    <a class="hidden lg:flex items-center justify-center p-2 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-primary/10 text-slate-700 dark:text-slate-300 transition-all" href="tel:0778022147">
+                        <span class="material-symbols-outlined">call</span>
+                    </a>
+                    <a href="./contact.html" class="bg-primary hover:bg-primary/90 text-white px-5 py-2.5 rounded-lg text-sm font-bold transition-all shadow-lg shadow-primary/20">
+                        Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex flex-col flex-1">
+        <!-- Hero Section -->
+        <section class="px-6 md:px-20 lg:px-40 py-16 bg-slate-900 text-white">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl md:text-5xl font-black leading-tight mb-6">Let's Build Together</h1>
+                <p class="text-slate-300 text-lg leading-relaxed mb-8">Ready to start your next project? Contact our team of experts for a comprehensive consultation and site evaluation.</p>
+            </div>
+        </section>
+
+        <!-- Contact Content -->
+        <section class="px-6 md:px-20 lg:px-40 py-20 bg-background-light dark:bg-background-dark">
+            <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16">
+                <!-- Contact Information -->
+                <div class="flex flex-col gap-12">
+                    <div>
+                        <h2 class="text-3xl font-black text-slate-900 dark:text-white mb-6">Get in Touch</h2>
+                        <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-8">We are available for new projects, joint ventures, and consultations across Uganda. Reach out to our headquarters to schedule a meeting with our lead engineers.</p>
+                        
+                        <div class="flex flex-col gap-6">
+                            <!-- Address -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0">
+                                    <span class="material-symbols-outlined">location_on</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 dark:text-white mb-1">Headquarters</h4>
+                                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed">Plot 1, Nyonyi Gardens Road<br/>Upper Kololo Terrace<br/>Kampala, Uganda</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Phone -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0">
+                                    <span class="material-symbols-outlined">call</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 dark:text-white mb-1">Direct Line</h4>
+                                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                                        <a href="tel:0778022147" class="hover:text-primary transition-colors">0778 022147</a><br/>
+                                        <span class="text-sm text-slate-500">Mon-Fri, 8:00 AM - 5:00 PM (EAT)</span>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <!-- Email -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0">
+                                    <span class="material-symbols-outlined">mail</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 dark:text-white mb-1">Email Inquiries</h4>
+                                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                                        <a href="mailto:info@nationalestate.ug" class="hover:text-primary transition-colors">info@nationalestate.ug</a><br/>
+                                        <a href="mailto:projects@nationalestate.ug" class="hover:text-primary transition-colors">projects@nationalestate.ug</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map Placeholder -->
+                    <div class="h-64 bg-slate-200 dark:bg-slate-800 rounded-xl overflow-hidden relative border border-slate-300 dark:border-slate-700">
+                        <div class="absolute inset-0 flex items-center justify-center flex-col gap-2 text-slate-500">
+                            <span class="material-symbols-outlined text-4xl">map</span>
+                            <span class="font-medium">Interactive Map Placeholder</span>
+                            <span class="text-sm text-slate-400">(Requires Google Maps API Key)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-white dark:bg-slate-900 p-8 md:p-10 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xl">
+                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-6">Send an Inquiry</h3>
+                    <form class="flex flex-col gap-6" onsubmit="event.preventDefault(); alert('Form submission is not active in this static demo.');">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="flex flex-col gap-2">
+                                <label for="firstName" class="text-sm font-bold text-slate-700 dark:text-slate-300">First Name</label>
+                                <input type="text" id="firstName" name="firstName" required class="px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-700 bg-transparent focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all dark:text-white" placeholder="John">
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label for="lastName" class="text-sm font-bold text-slate-700 dark:text-slate-300">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" required class="px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-700 bg-transparent focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all dark:text-white" placeholder="Doe">
+                            </div>
+                        </div>
+                        
+                        <div class="flex flex-col gap-2">
+                            <label for="email" class="text-sm font-bold text-slate-700 dark:text-slate-300">Email Address</label>
+                            <input type="email" id="email" name="email" required class="px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-700 bg-transparent focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all dark:text-white" placeholder="john@example.com">
+                        </div>
+                        
+                        <div class="flex flex-col gap-2">
+                            <label for="phone" class="text-sm font-bold text-slate-700 dark:text-slate-300">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-700 bg-transparent focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all dark:text-white" placeholder="+256 700 000000">
+                        </div>
+
+                        <div class="flex flex-col gap-2">
+                            <label for="interest" class="text-sm font-bold text-slate-700 dark:text-slate-300">Area of Interest</label>
+                            <select id="interest" name="interest" class="px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-700 bg-transparent focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all dark:text-white appearance-none">
+                                <option value="" disabled selected>Select a service</option>
+                                <option value="residential">Residential Construction</option>
+                                <option value="commercial">Commercial Development</option>
+                                <option value="estate">Estate Infrastructure</option>
+                                <option value="renovation">Renovation & Remodeling</option>
+                                <option value="other">Other Inquiry</option>
+                            </select>
+                        </div>
+                        
+                        <div class="flex flex-col gap-2">
+                            <label for="message" class="text-sm font-bold text-slate-700 dark:text-slate-300">Project Details</label>
+                            <textarea id="message" name="message" rows="5" required class="px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-700 bg-transparent focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all dark:text-white resize-none" placeholder="Tell us about your project timeline, location, and specific requirements..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full py-4 bg-primary text-white font-bold rounded-lg hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20 mt-2">
+                            Send Message
+                        </button>
+                        <p class="text-xs text-slate-500 text-center mt-2">We typically respond within 24 business hours.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-16 pb-16 border-b border-white/10">
+                <div class="flex flex-col gap-6">
+                    <a href="./index.html" class="flex items-center gap-3">
+                        <div class="text-primary">
+                            <svg class="size-8" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z" fill="currentColor"></path>
+                            </svg>
+                        </div>
+                        <span class="text-xl font-extrabold tracking-tight uppercase">National Estate</span>
+                    </a>
+                    <p class="text-white/60 text-sm leading-relaxed">
+                        Leading construction and estate development company in Kampala, Uganda. Building with integrity and durability.
+                    </p>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6">Services</h5>
+                    <ul class="flex flex-col gap-4 text-white/60 text-sm">
+                        <li><a class="hover:text-primary transition-colors" href="./services.html">Residential Buildings</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="./services.html">Commercial Complexes</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="./services.html">Estate Infrastructure</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="./services.html">Renovations &amp; Repairs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6">Contact Info</h5>
+                    <ul class="flex flex-col gap-4 text-white/60 text-sm">
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary text-lg">location_on</span>
+                            <span>Plot 1, Nyonyi Gardens Rd,<br/>Upper Kololo Terrace, Kampala</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary text-lg">call</span>
+                            <span>0778 022147</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary text-lg">mail</span>
+                            <span>info@nationalestate.ug</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6">Newsletter</h5>
+                    <p class="text-white/60 text-sm mb-4">Stay updated with our latest projects and insights.</p>
+                    <div class="flex gap-2">
+                        <input class="bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm w-full focus:ring-primary focus:border-primary" placeholder="Your email" type="email"/>
+                        <button class="bg-primary p-2 rounded-lg"><span class="material-symbols-outlined">send</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 text-white/40 text-xs">
+                <p>© 2024 National Estate &amp; Construction Company. All rights reserved.</p>
+                <div class="flex gap-8">
+                    <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+                    <a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>

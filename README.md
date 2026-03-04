@@ -1,20 +1,62 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# National Estate & Construction - Static Website
 
-# Run and deploy your AI Studio app
+This is a purely static HTML, CSS, and JavaScript website for National Estate & Construction. It has been converted from a React/Vite application to ensure compatibility with GitHub Pages without requiring any build steps.
 
-This contains everything you need to run your app locally.
+## Project Structure
 
-View your app in AI Studio: https://ai.studio/apps/5d7feb94-bf8a-433f-81b3-7444aca9acbc
+```
+/
+├── index.html          # Home page (entry point)
+├── about.html          # About Us page
+├── services.html       # Services page
+├── projects.html       # Projects portfolio page
+├── why-choose-us.html  # Why Choose Us page
+├── testimonials.html   # Testimonials page
+├── contact.html        # Contact page
+├── css/
+│   └── styles.css      # Custom styles (if any)
+├── js/
+│   └── main.js         # Custom JavaScript functionality
+├── assets/
+│   ├── images/         # Static images
+│   └── icons/          # Static icons
+└── README.md           # Project documentation
+```
 
-## Run Locally
+## Technical Details
 
-**Prerequisites:**  Node.js
+- **No Build Step:** This project uses pure HTML, CSS, and JavaScript. There is no Node.js, Vite, or React build process required.
+- **Tailwind CSS:** Tailwind CSS is included via CDN (`https://cdn.tailwindcss.com`) in the `<head>` of each HTML file. Custom configuration is provided inline via a `<script>` tag.
+- **Relative Paths:** All links to CSS, JS, images, and other HTML pages use relative paths (e.g., `./about.html`, `./css/styles.css`) to ensure the site works correctly when served from a subdirectory on GitHub Pages.
+- **Icons & Fonts:** Google Fonts (Inter) and Material Symbols Outlined are included via CDN links in the HTML `<head>`.
 
+## Local Development
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+To view the site locally, you can use any static file server.
+
+If you have Node.js installed, you can use the `serve` package:
+
+```bash
+npx serve .
+```
+
+Alternatively, you can use Python's built-in HTTP server:
+
+```bash
+python3 -m http.server
+```
+
+Or simply open `index.html` directly in your web browser.
+
+## Deployment to GitHub Pages
+
+This site is ready to be deployed directly to GitHub Pages.
+
+1. Push the code to a GitHub repository.
+2. Go to the repository's **Settings** tab.
+3. Navigate to **Pages** in the left sidebar.
+4. Under **Build and deployment**, select **Deploy from a branch** as the source.
+5. Under **Branch**, select `main` (or your default branch) and the `/ (root)` folder.
+6. Click **Save**.
+
+GitHub Pages will automatically serve the static files. No additional configuration or GitHub Actions workflows are required.

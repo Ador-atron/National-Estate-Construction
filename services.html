@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Our Services | National Estate & Construction</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1152d4",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                        "charcoal": "#1e293b",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+    <!-- Top Navigation Bar -->
+    <header class="sticky top-0 z-50 w-full bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="./index.html" class="flex items-center gap-3">
+                    <div class="text-primary">
+                        <svg class="size-8" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z" fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <span class="text-xl font-extrabold tracking-tight text-slate-900 dark:text-white uppercase">National Estate</span>
+                </a>
+                <nav class="hidden md:flex items-center gap-8">
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="./index.html">Home</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="./about.html">About</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="./services.html">Services</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="./projects.html">Projects</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="./why-choose-us.html">Why Choose Us</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="./testimonials.html">Testimonials</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="./contact.html">Contact</a>
+                </nav>
+                <div class="flex items-center gap-3">
+                    <a class="hidden lg:flex items-center justify-center p-2 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-primary/10 text-slate-700 dark:text-slate-300 transition-all" href="tel:0778022147">
+                        <span class="material-symbols-outlined">call</span>
+                    </a>
+                    <a href="./contact.html" class="bg-primary hover:bg-primary/90 text-white px-5 py-2.5 rounded-lg text-sm font-bold transition-all shadow-lg shadow-primary/20">
+                        Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex flex-col flex-1">
+        <!-- Hero Section -->
+        <section class="relative px-6 lg:px-40 py-16 bg-slate-900 overflow-hidden">
+            <div class="absolute inset-0 opacity-40 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAwvmG3sWmOj4ZXVRkzzYmZqNF6uma3P1mRb6IEL-b45gFRX44jpGTNSAZCPALG1d8COI7sJZQQ2bOrMKR3zyL_Uz5qCiZ0rQxO4ExK51Zl01lnR3tLytKHDn6TbXm8Ds2AhMD7C51uayqmLSzSX4DGn-hJJ3z3sM436VSNUNDnD3CpHaUZ1E-wkVyXBtwUtCqtapyEP_66lOMvguEdNp_VLvxMp-pRORnMusZHoEj3EUl8ZibR2KPGWom3LH-Sf8VxMpmy2Kt_xrA");'></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-slate-950 to-transparent"></div>
+            <div class="relative z-10 max-w-[960px]">
+                <h1 class="text-white text-4xl md:text-5xl font-black leading-tight mb-4">Our Construction & Development Services</h1>
+                <p class="text-slate-300 text-lg max-w-2xl">Delivering excellence across residential, commercial, and estate development projects nationwide with precision and integrity.</p>
+            </div>
+        </section>
+
+        <div class="px-6 lg:px-40 py-12 flex flex-col gap-16 max-w-[1400px] mx-auto w-full">
+            <!-- 1. Residential Construction -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1 flex flex-col gap-6">
+                    <div class="flex items-center gap-2 text-primary">
+                        <span class="material-symbols-outlined">home_work</span>
+                        <span class="uppercase tracking-widest text-xs font-bold">Category 01</span>
+                    </div>
+                    <h2 class="text-3xl font-black text-slate-900 dark:text-white">Residential Construction</h2>
+                    <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">We build tailored living spaces designed for comfort, luxury, and long-term durability. Our residential team focuses on creating homes that reflect personal style while adhering to the highest structural standards.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="p-4 rounded-lg bg-slate-100 dark:bg-slate-800/50">
+                            <h4 class="font-bold text-primary text-sm mb-1 uppercase tracking-tight">Who it's for</h4>
+                            <p class="text-sm text-slate-700 dark:text-slate-300">Private homeowners and luxury property developers.</p>
+                        </div>
+                        <div class="p-4 rounded-lg bg-slate-100 dark:bg-slate-800/50">
+                            <h4 class="font-bold text-primary text-sm mb-1 uppercase tracking-tight">Project Scope</h4>
+                            <p class="text-sm text-slate-700 dark:text-slate-300">Custom villas, high-end apartments, and urban townhouses.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h4 class="font-bold text-slate-900 dark:text-white">Key Benefits</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                <span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Energy-efficient sustainable designs
+                            </li>
+                            <li class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                <span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Premium finishes and materials
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="./contact.html" class="flex w-fit mt-4 items-center justify-center rounded-lg h-12 px-6 bg-primary text-white font-bold hover:scale-[1.02] transition-transform">
+                        Request a Site Visit
+                    </a>
+                </div>
+                <div class="order-1 lg:order-2 h-[400px] w-full rounded-xl overflow-hidden shadow-2xl">
+                    <div class="w-full h-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC1AKsC0zy4kxR8XEJOEJNxhyew4HDxzEVr8Oh1Tygp3jfBR5Q1LQSqGdyYWLJJS-BeigKOOUKqYkZcQkkv2EgWPtg0n8Uha72sEsLz5foGcO6FeJr3TS0weoQhOqX8cAyCb7KiOjej2pU1kml0Rb_Qmol8rVe3djZDOrzYxvQQUMdlYmFKyPY4zVukyT4ck-jsxm-rvHkJmKL1bmWVTAFZhr9i_kxWlhYxRMBk98puE5MBHr51R0FNjOezSNvFckgve9QTtweOVqU");'></div>
+                </div>
+            </div>
+
+            <!-- 2. Commercial Construction -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="h-[400px] w-full rounded-xl overflow-hidden shadow-2xl">
+                    <div class="w-full h-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAvIsVJ0YiN8S_atRpgadGbhJsdwLcEilh6ebRsqNcsEZgAtT9mFLnL2ZUzHZ7HjwT_R_FSJ6jcVT_olqCequNwtROZaUcWCPHGuVRImwp8IqhxTkaHxmBOXweo8-IZyOic1Be4iAQvVcK5T2-r2NGC_v_n62yIUayb66_QkN7G9dFNZyTeULWw7aT9PYl6-RjtSjQaOWvPqTkWAagkfkqP7mK58Xps7RdpXGiffA5oS4bGwyHLjUXvsbFjFRWnKslVruO1IskHSuU");'></div>
+                </div>
+                <div class="flex flex-col gap-6">
+                    <div class="flex items-center gap-2 text-primary">
+                        <span class="material-symbols-outlined">business</span>
+                        <span class="uppercase tracking-widest text-xs font-bold">Category 02</span>
+                    </div>
+                    <h2 class="text-3xl font-black text-slate-900 dark:text-white">Commercial Construction</h2>
+                    <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">Functional, efficient, and iconic commercial spaces that drive business growth. We understand the complexities of corporate infrastructure and delivery timelines.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="p-4 rounded-lg bg-slate-100 dark:bg-slate-800/50">
+                            <h4 class="font-bold text-primary text-sm mb-1 uppercase tracking-tight">Who it's for</h4>
+                            <p class="text-sm text-slate-700 dark:text-slate-300">Corporations, retailers, and institutional organizations.</p>
+                        </div>
+                        <div class="p-4 rounded-lg bg-slate-100 dark:bg-slate-800/50">
+                            <h4 class="font-bold text-primary text-sm mb-1 uppercase tracking-tight">Project Scope</h4>
+                            <p class="text-sm text-slate-700 dark:text-slate-300">Office hubs, retail plazas, and hospitality centers.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h4 class="font-bold text-slate-900 dark:text-white">Key Benefits</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                <span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                On-time delivery for business readiness
+                            </li>
+                            <li class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                <span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Scalable and future-proof floor plans
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="./contact.html" class="flex w-fit mt-4 items-center justify-center rounded-lg h-12 px-6 bg-primary text-white font-bold hover:scale-[1.02] transition-transform">
+                        Request a Site Visit
+                    </a>
+                </div>
+            </div>
+
+            <!-- 3. Estate Development -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1 flex flex-col gap-6">
+                    <div class="flex items-center gap-2 text-primary">
+                        <span class="material-symbols-outlined">map</span>
+                        <span class="uppercase tracking-widest text-xs font-bold">Category 03</span>
+                    </div>
+                    <h2 class="text-3xl font-black text-slate-900 dark:text-white">Estate Development</h2>
+                    <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">Large-scale land development and community planning. We transform raw land into vibrant, serviced estates with world-class infrastructure.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="p-4 rounded-lg bg-slate-100 dark:bg-slate-800/50">
+                            <h4 class="font-bold text-primary text-sm mb-1 uppercase tracking-tight">Who it's for</h4>
+                            <p class="text-sm text-slate-700 dark:text-slate-300">Investors, government bodies, and land syndicates.</p>
+                        </div>
+                        <div class="p-4 rounded-lg bg-slate-100 dark:bg-slate-800/50">
+                            <h4 class="font-bold text-primary text-sm mb-1 uppercase tracking-tight">Project Scope</h4>
+                            <p class="text-sm text-slate-700 dark:text-slate-300">Gated communities, industrial parks, and site servicing.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h4 class="font-bold text-slate-900 dark:text-white">Key Benefits</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                <span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                High ROI through strategic master planning
+                            </li>
+                            <li class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                <span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Complete infrastructure (roads, drainage, power)
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="./contact.html" class="flex w-fit mt-4 items-center justify-center rounded-lg h-12 px-6 bg-primary text-white font-bold hover:scale-[1.02] transition-transform">
+                        Request a Site Visit
+                    </a>
+                </div>
+                <div class="order-1 lg:order-2 h-[400px] w-full rounded-xl overflow-hidden shadow-2xl">
+                    <div class="w-full h-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBUNBk6T7dXbbNUC0LJhpaTmTrvED3UgEL63_g7WuF3BjWgjXypldZb01uyX9VkZ0iMCvHVEy1ln6Zi7d-o7V4MeEkUHXQyxqWNo-mwXxbUGXKpvLxZvH2eGri4BDPNicJgLOieGV58a_qai6kxwNSbxqSFQskuXJGMykEQvnxhIHjl-0wilqwjwoauqQDvZAXibCUqUGMiMvc1utB87muMzwOKRVdUwbnqa8_lYNWKR84rqdoD7LF5FMig2DnNbODOrfycbcSCJ14");'></div>
+                </div>
+            </div>
+
+            <!-- 4. Renovation & Remodeling -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="h-[400px] w-full rounded-xl overflow-hidden shadow-2xl">
+                    <div class="w-full h-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCN4NhWeNvHuEYCemnmhfs1BVYg9-QAdLaZNXghPbGjXlq9r46-YwnE22-k6VnVqO3o-CK-WtBBxl4QO3iK9olc_Vs5vp3wvimiJBa0I4b2YpP5DT0TOPmn8n9pjsZN3Qb4XNutaCKxSUNnfnHjjtIwS3DRXEmC9Jh3b-a1VGXPET0rmX017wqH9N4cJ79imxjrqne3gWQd5FxUC-8AbwhhZSuQ07LFQFvCr00nnYS63okMWiOC6Wc8ypelsdKGUaC4mEbmfBL-jo4");'></div>
+                </div>
+                <div class="flex flex-col gap-6">
+                    <div class="flex items-center gap-2 text-primary">
+                        <span class="material-symbols-outlined">architecture</span>
+                        <span class="uppercase tracking-widest text-xs font-bold">Category 04</span>
+                    </div>
+                    <h2 class="text-3xl font-black text-slate-900 dark:text-white">Renovation & Remodeling</h2>
+                    <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">Breathing new life into existing structures. We modernize spaces while preserving character, ensuring a seamless blend of old and new.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="p-4 rounded-lg bg-slate-100 dark:bg-slate-800/50">
+                            <h4 class="font-bold text-primary text-sm mb-1 uppercase tracking-tight">Who it's for</h4>
+                            <p class="text-sm text-slate-700 dark:text-slate-300">Property owners looking to increase asset value.</p>
+                        </div>
+                        <div class="p-4 rounded-lg bg-slate-100 dark:bg-slate-800/50">
+                            <h4 class="font-bold text-primary text-sm mb-1 uppercase tracking-tight">Project Scope</h4>
+                            <p class="text-sm text-slate-700 dark:text-slate-300">Kitchen & bath upgrades, structural extensions, and full retrofits.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h4 class="font-bold text-slate-900 dark:text-white">Key Benefits</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                <span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Immediate property value appreciation
+                            </li>
+                            <li class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                <span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Improved spatial flow and ergonomics
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="./contact.html" class="flex w-fit mt-4 items-center justify-center rounded-lg h-12 px-6 bg-primary text-white font-bold hover:scale-[1.02] transition-transform">
+                        Request a Site Visit
+                    </a>
+                </div>
+            </div>
+
+            <!-- 5. Project Management -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1 flex flex-col gap-6">
+                    <div class="flex items-center gap-2 text-primary">
+                        <span class="material-symbols-outlined">assignment</span>
+                        <span class="uppercase tracking-widest text-xs font-bold">Category 05</span>
+                    </div>
+                    <h2 class="text-3xl font-black text-slate-900 dark:text-white">Project Management</h2>
+                    <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">Comprehensive oversight of construction cycles. We manage logistics, vendors, and compliance so you don't have to worry about the details.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="p-4 rounded-lg bg-slate-100 dark:bg-slate-800/50">
+                            <h4 class="font-bold text-primary text-sm mb-1 uppercase tracking-tight">Who it's for</h4>
+                            <p class="text-sm text-slate-700 dark:text-slate-300">Hands-off owners and complex multi-vendor projects.</p>
+                        </div>
+                        <div class="p-4 rounded-lg bg-slate-100 dark:bg-slate-800/50">
+                            <h4 class="font-bold text-primary text-sm mb-1 uppercase tracking-tight">Project Scope</h4>
+                            <p class="text-sm text-slate-700 dark:text-slate-300">Timeline tracking, budget management, and safety audits.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h4 class="font-bold text-slate-900 dark:text-white">Key Benefits</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                <span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Significant cost savings through efficient procurement
+                            </li>
+                            <li class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                                <span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Zero-stress ownership experience
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="./contact.html" class="flex w-fit mt-4 items-center justify-center rounded-lg h-12 px-6 bg-primary text-white font-bold hover:scale-[1.02] transition-transform">
+                        Request a Site Visit
+                    </a>
+                </div>
+                <div class="order-1 lg:order-2 h-[400px] w-full rounded-xl overflow-hidden shadow-2xl">
+                    <div class="w-full h-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBOsG_csvgZTG4Mo5IRqb1XT96bc2RT_ses6-MBW2b587LXTjfSwl8lewPgU5JJHhy5A01aQxWOuzZAIfzf4WY6_Z1mlOwtCAmfhv1chqvbkN1Yyys3waSQrN_WCaFT8YOtH_cC8rS8DQ14io7LmEbl9NuZJww-6lE_uCoX8tFR7wWBSTQyeaVRYxpwYpccJAvFVKMSan7gYEHDp431-HkypwxbSxGivvD8t4Roj9zy9idd40rOj8xsyK3kDbN3M3Q33204klHnpz4");'></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Global CTA Section -->
+        <section class="mt-16 px-6 lg:px-40 py-20 bg-slate-900 dark:bg-slate-950 text-center flex flex-col items-center">
+            <h2 class="text-3xl md:text-4xl font-black text-white mb-6">Ready to Start Your Next Project?</h2>
+            <p class="text-slate-400 max-w-2xl mb-10 text-lg">Whether it's a dream home or a landmark commercial development, our team is ready to bring your vision to life with precision and excellence.</p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="./contact.html" class="flex items-center justify-center min-w-[200px] h-14 bg-primary text-white font-bold rounded-lg hover:bg-primary/90 transition-colors">Request a Consultation</a>
+                <a href="./projects.html" class="flex items-center justify-center min-w-[200px] h-14 bg-transparent border-2 border-slate-700 text-white font-bold rounded-lg hover:bg-slate-800 transition-colors">View Portfolio</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-16 pb-16 border-b border-white/10">
+                <div class="flex flex-col gap-6">
+                    <a href="./index.html" class="flex items-center gap-3">
+                        <div class="text-primary">
+                            <svg class="size-8" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z" fill="currentColor"></path>
+                            </svg>
+                        </div>
+                        <span class="text-xl font-extrabold tracking-tight uppercase">National Estate</span>
+                    </a>
+                    <p class="text-white/60 text-sm leading-relaxed">
+                        Leading construction and estate development company in Kampala, Uganda. Building with integrity and durability.
+                    </p>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6">Services</h5>
+                    <ul class="flex flex-col gap-4 text-white/60 text-sm">
+                        <li><a class="hover:text-primary transition-colors" href="./services.html">Residential Buildings</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="./services.html">Commercial Complexes</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="./services.html">Estate Infrastructure</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="./services.html">Renovations &amp; Repairs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6">Contact Info</h5>
+                    <ul class="flex flex-col gap-4 text-white/60 text-sm">
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary text-lg">location_on</span>
+                            <span>Plot 1, Nyonyi Gardens Rd,<br/>Upper Kololo Terrace, Kampala</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary text-lg">call</span>
+                            <span>0778 022147</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary text-lg">mail</span>
+                            <span>info@nationalestate.ug</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6">Newsletter</h5>
+                    <p class="text-white/60 text-sm mb-4">Stay updated with our latest projects and insights.</p>
+                    <div class="flex gap-2">
+                        <input class="bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm w-full focus:ring-primary focus:border-primary" placeholder="Your email" type="email"/>
+                        <button class="bg-primary p-2 rounded-lg"><span class="material-symbols-outlined">send</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 text-white/40 text-xs">
+                <p>© 2024 National Estate &amp; Construction Company. All rights reserved.</p>
+                <div class="flex gap-8">
+                    <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+                    <a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>
