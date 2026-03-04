@@ -18,12 +18,18 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Simple mobile menu toggle functionality (if added later)
-    // const menuBtn = document.getElementById('mobile-menu-btn');
-    // const mobileMenu = document.getElementById('mobile-menu');
-    // if (menuBtn && mobileMenu) {
-    //     menuBtn.addEventListener('click', () => {
-    //         mobileMenu.classList.toggle('hidden');
-    //     });
-    // }
+    // Mobile menu toggle functionality
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    if (menuBtn && mobileMenu) {
+        const menuIcon = menuBtn.querySelector('.material-symbols-outlined');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (menuIcon) {
+                menuIcon.textContent = mobileMenu.classList.contains('hidden') ? 'menu' : 'close';
+            }
+        });
+    }
 });
